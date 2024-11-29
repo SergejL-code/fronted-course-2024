@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+
+p{font-size: 15px;
+    background-color: brown;
+    position: relative;
+
+}
+#big_front_size{
+    font-size: 35px;
+}
+.milk_product.milk p.botel_of_milk{cursor: cell;}
+
+.flex{
+    width: 150px;
+height: 150px;
+border: 2px solid black;
+margin: 20px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.red_text{color:red;}
+.position{position: relative;
+    top: 50px;
+    left: 70px;
+}

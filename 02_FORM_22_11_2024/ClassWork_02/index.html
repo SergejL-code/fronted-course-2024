@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--работаем с html  последней  версий -->
+<html lang="en">
+  <!--язык, родной язык документа En -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- используется  международная система символов -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--   -->
+    <title>Form</title>
+  </head>
+  <!-- где будет задаваться стилистика? 
+   1.Inline-styles  в тои же самой линий , что и элемент
+   С помощью чего будет выбираться элемент или элементы для настройки? -->
+  <body>
+    <h1>Signup Form</h1>
+    <!--форма для регистраций-->
+    <form>
+      <!-- объединить информацию и выдать-->
+
+      <!--дефолтный блочный div-->
+      <!--дефолтный строчный span-->
+      <div>
+        <label for="name">Name: </label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="Email">Email: </label>
+        <input
+          id="name"
+          type="email"
+          placeholder="Enter your Email..."
+          required
+        />
+      </div>
+      <br/>
+      <div>
+        <label for="password">Password: </label>
+        <input
+          id="password"
+          type="password"
+          placeholder="Enter your Password..."
+          minlength="8"
+          required
+        />
+      </div>
+      <br>
+        <label for="phone">Phone: </label>
+        <input
+          id="phone"
+          title="Example: +123-456-7890"
+          type="tel"
+           placeholder="Example: +123-456-7890"                    
+         pattern="\+[0-9]{3}-?[0-9]{3}-?[0-9]{4}" 
+              required
+        />
+        <div>
+      <br/>
+      <div>
+        <label for="hobby">Hobby: </label>
+        <select  id="hobby" required>
+            <option value="">Choose your hobby:</option>
+            <option value="Chess">Chess - best sport from all over the world!</option>
+            <option value="Football">football - best sport from all over the world!</option>
+            <option value="None">None</option>
+        </select>
+      </div>
+      <br>
+      <!-- REQUIRED  можно один -->
+      <div>
+        <label for="male">Male:</label>
+        <input id="male" type="radio" name="gender"  value="male"
+        required>
+        <label for="female">Female:</label>
+        <input id="female" type="radio" name="gender"  value="female"
+        required>
+      </div>
+      <br>
+      <div>
+        <label for="gender">I agree ....</label>
+        <input id="agree" type="checkbox"required>
+      </div>
+      <br>
+<button type="submit">Input</button>
+<button type="reset">Reset</button>
+
+    </form>
+  </body>
+</html>

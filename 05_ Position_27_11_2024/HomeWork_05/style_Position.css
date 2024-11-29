@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  width: 600px;
+  height: 400px;
+  background-image: url(./images/bg.jpg);
+
+  position: relative;
+}
+img {
+  position: absolute;
+}
+img[alt="planet-1"] {
+  top: 12px;
+  left: 180px;
+  width: 120px;
+}
+img[alt="planet-2"] {
+  top: 60px;
+  left: 54px;
+  width: 170px;
+}
+img[alt="planet-3"] {
+  top: 144px;
+  left: 160px;
+  width: 225px;
+}
+img[alt="asteroid"] {
+  top: 70px;
+  right: 100px;
+}
+img[alt="spaceship"] {
+  top: 160px;
+  left: 160px;
+  width: 45px;
+}
+img[alt="ufo"] {
+  top: 290px;
+  left: 135px;
+  width: 90px;
+}
+img[alt="superman"] {
+  bottom: 0px;
+  right: 30px;
+  width: 75px;
+}
