@@ -1,1 +1,10 @@
-a {color: #000;}
+a {color: #000;
+text-decoration: none;}
+
+.lesson-container{display: flex;
+flex-direction: column;}
+
+main{padding: 0px 30px;}
+h1{color: chocolate;}
+a:hover{text-decoration: underline;
+color: chocolate;}
