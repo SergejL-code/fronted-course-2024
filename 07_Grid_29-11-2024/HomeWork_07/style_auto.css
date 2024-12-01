@@ -6,8 +6,21 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
-a{display: block;
-text-decoration: none;}
+a {
+  display: block;
+  text-decoration: none;
+  box-shadow: 6px 0px 12px rgb(7, 240, 7);
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(245, 5, 25);
+}
+h4 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 
 header {
   display: flex;
@@ -17,45 +30,321 @@ header {
   font-family: "Nabla";
   base-palette: 1;
 }
-.grid-fahrzeuge-galerie{display: grid;
-gap: 10px 20px ;
-grid-template-columns: repeat(auto-fill, minmax(300px,2fr));
-grid-auto-rows:200px ;
-margin: 100px 0px 20px 0px;
+.grid-fahrzeuge-galerie {
+  display: grid;
+  gap: 30px 35px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  grid-auto-rows: 200px;
+  margin: 100px 0px 20px 0px;
 }
 
-
-.fahrzeug{display: flex;
-    color: rgb(19, 214, 101);
-    flex-direction: column ;
-    align-items: center;
-    justify-content: flex-end;
-}
-.lucid{display: flex;
-    background-image: url('https://hips.hearstapps.com/hmg-prod/images/2023-lucid-air-touring-9444-1675346750.jpg?crop=0.635xw:0.536xh;0.151xw,0.315xh&resize=2048:*');
-    background-position: center;
-    background-size: cover;
-    justify-content: flex-start;
-    flex-direction:column ;
-    align-items: start;
-color: hsl(271, 82%, 40%);
-}
-.tesla{
-    background-image: url('https://media.evkx.net/multimedia/models/tesla/model_s/model_s_plaid/main_1.jpg') ;
-    display: flex;
-    background-position: center ;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
- 
+.fahrzeug {
+  display: flex;
+  font-size: 26px;
+  font-family: cursive;
+  border-radius: 10px;
+  color: hls(78, 29, 192);
 }
 
-.nio{background-image: url('https://www.electrive.com/media/2022/06/nio-es7-2022-01-min-1400x700.png.webp') ;
-    display: flex;
-    background-position: center ;
-    background-size: cover;
-    background-position: center;
-    background-size: cover;
-    justify-content: flex-start;
-    flex-direction:column ;
-    align-items: start;}
+.tesla {
+  background-image: url("https://media.evkx.net/multimedia/models/tesla/model_s/model_s_plaid/main_1.jpg");
+  /* color:hsl(271, 82%, 40%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.lucid {
+  display: flex;
+  background-image: url("https://hips.hearstapps.com/hmg-prod/images/2023-lucid-air-touring-9444-1675346750.jpg?crop=0.635xw:0.536xh;0.151xw,0.315xh&resize=2048:*");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* color: hsl(271, 82%, 40%); */
+  height: 100%;
+  width: 100%;
+}
+
+.ford {
+  background-image: url("https://i.gaw.to/content/photos/40/68/406867_Le_Ford_Mustang_Mach-E_arrive_chez_nous.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color:hsl(32, 87%, 46%); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.byd {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/BYD_Seal_IAA_2023_1X7A0371.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 239, 237); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.xpeng {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/5a/Xpeng_P7_002.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(224, 103, 22); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.porche {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Porsche_Taycan_Cross_Turismo_Turbo_S_IAA_2021_1X7A0116.jpg/1280px-Porsche_Taycan_Cross_Turismo_Turbo_S_IAA_2021_1X7A0116.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(22, 7, 235); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.vw {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Volkswagen_press_conference%2C_IAA_2017%2C_Frankfurt_%281Y7A2075%29.jpg/1920px-Volkswagen_press_conference%2C_IAA_2017%2C_Frankfurt_%281Y7A2075%29.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.bmw {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/BMW_iNEXT_IAA_2019_JM_1413.jpg/1920px-BMW_iNEXT_IAA_2019_JM_1413.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.mercedes {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Mercedes-Benz_Vision_EQS_at_IAA_2019_IMG_0754.jpg/1920px-Mercedes-Benz_Vision_EQS_at_IAA_2019_IMG_0754.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.nissan {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Nissan_Ariya_Nismo_Auto_Zuerich_2024_DSC_6736.jpg/1920px-Nissan_Ariya_Nismo_Auto_Zuerich_2024_DSC_6736.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.honda {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Honda_Urban_EV_Concept_IMG_0189.jpg/1920px-Honda_Urban_EV_Concept_IMG_0189.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.hyundai-ioniq {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hyundai_IONIQ_5_Long_Range_Prestige_NE1_PE_Atlas_White_Matte_%285%29.jpg/1920px-Hyundai_IONIQ_5_Long_Range_Prestige_NE1_PE_Atlas_White_Matte_%285%29.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.kia {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/2025_Kia_EV6_GT-Line_Auto_Zuerich_2024_DSC_6468.jpg/1920px-2025_Kia_EV6_GT-Line_Auto_Zuerich_2024_DSC_6468.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.genesis {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Genesis_GV60_Magma_Concept_Auto_Zuerich_2024_DSC_6588.jpg/1920px-Genesis_GV60_Magma_Concept_Auto_Zuerich_2024_DSC_6588.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.hyundai {
+  background-image: url("https://imgr1.auto-motor-und-sport.de/image-169FullWidthOdcPortrait-dbca445e-1980681.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(233, 144, 10); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.peugeot {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Peugeot_e-208_facelift_Auto_Zuerich_2023_1X7A1204.jpg/1920px-Peugeot_e-208_facelift_Auto_Zuerich_2023_1X7A1204.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.bugatti {
+  background-image: url("https://carwow-uk-wp-2.imgix.net/RIMAC_NEVERA_FRONT_HIGH-1.jpg?auto=format&cs=tinysrgb&fit=crop&h=&ixlib=rb-1.1.0&q=60&w=1600");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.jaguar {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Jaguar_I-Pace_IMG_0491.jpg/1920px-Jaguar_I-Pace_IMG_0491.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.aston {
+  background-image: url("https://www.astonmartin.com/-/media/aston-martin/imported/rapide-amr/rapide-amr_02web.jpg?mw=1920&rev=-1&extension=webp&hash=70DCC8F23FDFE1280C1A6A1D1C64FC08");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.polestar-2 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/2022_Polestar_2_BST_Edition_270_1.jpg/1920px-2022_Polestar_2_BST_Edition_270_1.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(238, 134, 29); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.polestar-3 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Polestar_3_Auto_Zuerich_2023_1X7A1310.jpg/1920px-Polestar_3_Auto_Zuerich_2023_1X7A1310.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(202, 128, 17); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.maserati {
+  background-image: url("https://ev-database.org/img/auto/Maserati_GranTurismo_Folgore/Maserati_GranTurismo_Folgore-01@2x.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.lada {
+  background-image: url("https://www.classicdriver.com/sites/default/files/article_images/rivianr3x0.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(216, 105, 32); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.aurus {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aurus_Senat_Genf_2019_1Y7A5897.jpg/1920px-Aurus_Senat_Genf_2019_1Y7A5897.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(131, 122, 182); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.lightyear {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3c/Lightyear_One_Motorworld_Munich_1X7A0060.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(206, 204, 223); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.seat {
+  background-image: url("https://www.autozeitung.de/assets/styles/article_image/public/field/images/cupra-born-2021-01_0.jpg?itok=SQs46DMa");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(243, 147, 3); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.fiat {
+  background-image: url("https://cdn.motor1.com/images/mgl/W8MLl6/s1/fiat-500-elektro-action-2024.jpg");
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  /* color: rgb(241, 240, 239); */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
