@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+html {
+  background-image: url(./images/elektroautos.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+a{display: block;
+text-decoration: none;}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  letter-spacing: 25px;
+  font-family: "Nabla";
+  base-palette: 1;
+}
+.grid-fahrzeuge-galerie{display: grid;
+gap: 10px 20px ;
+grid-template-columns: repeat(auto-fill, minmax(300px,2fr));
+grid-auto-rows:200px ;
+margin: 100px 0px 20px 0px;
+}
+
+
+.fahrzeug{display: flex;
+    color: rgb(19, 214, 101);
+    flex-direction: column ;
+    align-items: center;
+    justify-content: flex-end;
+}
+.lucid{display: flex;
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/2023-lucid-air-touring-9444-1675346750.jpg?crop=0.635xw:0.536xh;0.151xw,0.315xh&resize=2048:*');
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+    flex-direction:column ;
+    align-items: start;
+color: hsl(271, 82%, 40%);
+}
+.tesla{
+    background-image: url('https://media.evkx.net/multimedia/models/tesla/model_s/model_s_plaid/main_1.jpg') ;
+    display: flex;
+    background-position: center ;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+ 
+}
+
+.nio{background-image: url('https://www.electrive.com/media/2022/06/nio-es7-2022-01-min-1400x700.png.webp') ;
+    display: flex;
+    background-position: center ;
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-start;
+    flex-direction:column ;
+    align-items: start;}

@@ -7,5 +7,6 @@ grid-auto-rows: 50px;}
 
 main{padding: 0px 30px;}
 h1{color: chocolate;}
+/* стили с псевдокласс hover применятся к элементу при наведении на него мышкой */
 a:hover{text-decoration: underline;
 color: chocolate;}
