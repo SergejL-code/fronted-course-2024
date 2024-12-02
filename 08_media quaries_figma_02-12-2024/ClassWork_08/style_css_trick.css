@@ -5,12 +5,7 @@ body {
     /* vh - viewport height - высота видимой области браузера */
     min-height: 100vh;
   }
-  
-  h1 {
-    color: forestgreen;
-  }
-  
-  header {
+   header {
     /* vw - viewport width - ширина видимой области браузера */
     /* width: 80vw; */
     /* 'приклеиваем' элемент на страницу с помощью position sticky  */
@@ -20,6 +15,12 @@ body {
     height: 80px;
     background-color: forestgreen;
   }
+  
+  h1 {
+    color: forestgreen;
+  }
+  
+ 
   
   main {
     padding: 0px 30px;
