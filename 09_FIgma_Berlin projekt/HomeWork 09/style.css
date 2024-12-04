@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+}
+
+header {
+  position: sticky;
+  display: flex;
+  top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  gap: 15px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.title-top{font-size:x-large
+;}
+.head {
+  display: flex;
+  justify-content: space-between; /* по горизонту разделяем элементы */
+  align-items: center; /* ровняем по центру по вертикали */
+  width: 100%; /* элементы на всю ширину */
+}
+
+
+nav {
+  display: flex;
+  gap: 15px; 
+}
+.services {
+  display: flex;
+  gap: 10px; }
+
+.left_name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+}
+
+.left_name a {
+  color: black;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.grid-container-1,
+.grid-container-2,
+.grid-container-3,
+.grid-container-4,
+.grid-container-5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колоны по 1 фрейму каждая */
+  gap: 20px; /* гэп в 20пксл */
+  padding: 0 200px; /* паддинги */
+  max-width: 1200px; /* лимитируем максимальную ширину в 1200px */
+  margin: 0 auto; /* центруем на странице */
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column; /* располагаем элементы вертикально*/
+  align-items: stretch; /* распределяем элементы по ширине контейнера */
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.grid-item img {
+  display: block;
+  width: 100%;
+  height: 200px; /* Фиксированная высота для всех изображений */
+  object-fit: cover; /* Обрезает изображение, чтобы заполнить заданную высоту и ширину */
+  object-position: center; /* Центрирует изображение внутри контейнера */
+  margin: 0 auto;
+}
+
+h2 {
+  margin-left: 0;
+  padding-left: 200px; /* отступ слева такой же как у сетки*/
+  text-align: left; /* ровняем текст по левому краю */
+}
+
+.grid-item a {
+  color: blue; /* цвет для ссылки */
+  text-decoration: underline; /* подчеркиваем ссылку */
+  font-size: inherit; /* наследуем размер шрифта родителя */
+  vertical-align: baseline; /* Выравнивание с текстом */
+}
+
+.grid-item h3 {
+  margin: 10px 0 5px; /* Добавляем отступы сверху и снизу */
+  font-size: 16px; /* Устанавливаем размер шрифта для подзаголовка */
+  font-weight: bold; /* жирный текст */
+}
+
+.grid-item p {
+  margin-top: 0; /* Убираем верхний отступ у параграфа */
+}
+
+.links {
+  color: black !important; /* Устанавливаем черный цвет текста */
+  text-decoration: none !important; /* Убираем подчеркивание */
+}
+
+.links:hover {
+  text-decoration: underline !important; /* Добавляем подчеркивание при наведении */
+}
+
+.image_overlay img {
+  max-width: 100%; /* лимитируем ширину изображения размером контейнера */
+  max-height: 100vh; /* лимитируем высоту изображения размером экрана */
+  object-fit: contain; /* сохраняем пропорции */
+}
+
+footer {
+  background-color: #545454;
+  color: white;
+  padding: 40px;
+  position: relative;
+  padding-left: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px; 
+  margin-left: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.footer-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  
+}
+
+.footer-button:hover {
+  text-decoration: none;
+}
+
+.footer-links {
+  margin-bottom: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-links a:hover{
+  text-decoration: underline;
+}
+
+
+.footer-bottom {
+  margin-top: 0;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  font-family: Arial,sans-serif;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  nav {
+    display: none; 
+  }
+
+  .services {
+    margin-left: auto;
+  }
+
+  .grid-container-1,
+  .grid-container-2,
+  .grid-container-3,
+  .grid-container-4,
+  .grid-container-5 {
+    padding: 0 5px;
+  }
+
+  h2 {
+    padding-left: 5px;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    padding: 10px;
+  }
+
+  .services img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .grid-item img {
+      width: 100%; /* Ширина 100% контейнера */
+      height: 150px; /* Фиксируем одинаковую высоту для мобильной версии */
+      object-fit: cover; /* Уменьшаем или обрезаем изображение */
+      object-position: center; /* Центрируем изображение внутри контейнера */
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+@media(min-width:1200){
+
+}

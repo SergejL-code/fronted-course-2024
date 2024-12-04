@@ -98,3 +98,15 @@ background-color: rgba(230, 216, 216, 0.068);}
 }
 .lesson-container div{grid-auto-rows: 80px;}
 }
+@media(min-width:540px){
+  .lesson-container  {grid-auto-rows: 95px;
+    
+  }
+  .lesson-container div{grid-auto-rows: 95px;}
+  }
+  @media(max-width:530px){
+    .lesson-container  {grid-auto-rows: 95px;
+      
+    }
+    .lesson-container div{grid-auto-rows: 95px;}
+    }
