@@ -13,7 +13,7 @@ console.log(isHuman);
 
 // преобразуем через parseInt, т.к. есть символы
 //Переприсваиваем переменной myNumber новое значение
-myNumber=parseInt("123smth");
+myNumber=parseInt("123smtp");
 console.log("преобразованное", myNumber);
 
  
