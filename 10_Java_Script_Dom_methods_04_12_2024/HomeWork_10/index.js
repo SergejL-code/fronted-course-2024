@@ -5,7 +5,6 @@ const clonedBtn = btn.cloneNode(true);
 // задали id
 clonedBtn.id = "magic-btn-2";
 
-
 btn.addEventListener("click", () => {
   /*при нажатии на первую кнопку
   // работайте с clonedBtn
@@ -16,10 +15,11 @@ btn.addEventListener("click", () => {
   document.body.appendChild(clonedBtn);
   // изменили надпись с "нажми меня" на "Я изменю тебя"
   clonedBtn.innerText = "Я изменю тебя";
+
   // изменили цвет фона на #a78b71
   clonedBtn.style.backgroundColor = "#a78b71";
- 
-  //clonedBtn.className = "second-btn" 
+  clonedBtn.style.color = "white";
+  clonedBtn.className = "second-btn";
   console.log("первый слушатель!");
 });
 

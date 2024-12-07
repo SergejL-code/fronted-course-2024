@@ -22,8 +22,12 @@ header {
   /* box-shadow:0px 0px 10px url(./grayfon.jpg); */
 }
 main {
+  display: grid;
   padding: 0px 30px;
   flex: 1;
+  gap: 20px;
+  
+  
 }
 a {
   color: #000;
@@ -32,7 +36,10 @@ a {
 h1 {
   color: rgb(87, 12, 224);
 }
-
+h2{display: flex;
+  justify-content: center;
+  font-style:initial;
+}
 .lesson-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

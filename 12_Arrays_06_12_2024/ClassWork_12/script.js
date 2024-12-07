@@ -251,15 +251,15 @@ console.log(arrX);
 // Заполнить массив числами от 5 до 9, должно получиться [5, 6, 7, 8, 9]
 // использовать .push()
 // использовать цикл
-
+const arrC=[]
 for(let i = 0; i < 5; i++) {
   arrC.push(i + 5);
 }
 
-let x = 5;
-while(x < 10) {
-  arrC.push(x);
-  x++;
-}
+// let x = 5;
+// while(x < 10) {
+//   arrC.push(x);
+//   x++;
+// }
 
 console.log(arrC);
