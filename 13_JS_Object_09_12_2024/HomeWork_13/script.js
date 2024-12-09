@@ -7,8 +7,12 @@ let bankAccount = {
   balance: 0,
 };
 console.log(bankAccount);
-//объявляем функцию
+//объявляем функций
+// приветствие клиента и сообщение номера счёта 
+bankAccount.user = function() {console.log(`Добро пожаловать: ${this.accountHolderName} Ваш номер счёта ${this.accountNumber}`);
+}
 
+bankAccount.user();
 //добавляем сумму на счёт
 function deposit(bankAccount, sum) {
   bankAccount.balance += sum;
