@@ -29,12 +29,17 @@ console.log(user);
 delete user.isAdmin;
 console.log(user);
 
-for (const tr in user){ 
+// i - index (Array)
+// key - ключ (Object)
+// for (const key in object) {
+    
+// }
+for (const key in user){ 
 
 
     // console.log(`Ключ: ${tr}, Значение равно: ${user.tr};`)} 
     
-    console.log(`Ключ: ${tr}, Значение равно: ${user[tr]};`)} 
+    console.log(`Ключ: ${key}, Значение равно: ${user[key]};`)} 
      
     
 
