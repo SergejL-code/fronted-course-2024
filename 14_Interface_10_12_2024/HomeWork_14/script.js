@@ -39,5 +39,10 @@ let bankAccount = {
     nameInput.value = "";
     console.log(bank);
   }
-  function showAccounts() {}
+  function showAccounts() {
+    
+      const show = bank
+      console.log(show);
+      
+  }
   
