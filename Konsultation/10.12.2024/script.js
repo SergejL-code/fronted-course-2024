@@ -7,7 +7,7 @@ const age = 35;
 const fruits = ["apple", "orange", "mango"];
 const fruits1 = ["potatoe", "tomato", "cucumber"];
 const joinFruitsAndFruits1 = [...fruits, "flower", ...fruits1];
-console.log(joinFruitsAndFruits1);
+console.log("joinFruitsAndFruits1",joinFruitsAndFruits1);
 
 const brothers = [
   { race: "hobbit", height: 110, age: 45, name: "Frodo Baggins" },
@@ -16,15 +16,16 @@ const brothers = [
   { race: "dworf", height: 140, age: 150, name: "Gimly" },
   { race: "human", height: 195, age: 200, name: "Gandalf" },
 ];
+console.log("brothers",brothers);
 
 //*const frodo = brothers[0];
 //*console.log(frodo);
 
 const [frodo, aragorn, legolas, gimly, gandalf] = brothers;
 
-console.log(gimly);
+console.log("gimly",gimly,frodo);
 
-const ageOfFrodo = frodo.age;
+ const ageOfFrodo = frodo.age;
 console.log(ageOfFrodo); //достали по ключу
 
 const user = { id: 1, email: "user@mail.de", login: "Admin" };

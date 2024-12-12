@@ -60,4 +60,4 @@ confirm(" Вы действительно хотите закрыть стран
 
 //*получение от пользователя ответа(String" true, false", cancel-null)
 prompt()
-answer = prompt("Введите Выше Имя.")
+answer = prompt("Введите Ваше Имя.")

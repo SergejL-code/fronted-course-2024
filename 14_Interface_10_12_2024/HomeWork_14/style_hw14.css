@@ -36,4 +36,6 @@ body {
     width: calc(100%-20px);
     max-width: 300px;
   }
-  
+  #accountList{
+    list-style: none;
+  }
