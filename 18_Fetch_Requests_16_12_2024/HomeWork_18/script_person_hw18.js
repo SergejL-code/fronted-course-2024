@@ -19,12 +19,12 @@ function getCharacter() {
        genderElement.textContent = `Gender: ${data.results[7].gender}`;
 
 
-      const names = data.results.map(characterName=>characterName.name);
+     // const names = data.results.map(characterName=>characterName.name);
     //   const statuses = data.results.map(characterStatus=>characterStatus.status);
     //   const images = data.results.map(characterBild=>characterBild.image);
     //   const genders = data.results.map(characterGender=>characterGender.gender);
     //   console.log(names,statuses,images,genders);
-      
+   
     });
 }
 getCharacter();
