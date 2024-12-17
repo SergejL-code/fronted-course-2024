@@ -1,4 +1,7 @@
-h1{text-align: center;}
+h1{text-align: center;
+font-size: 40px;
+font-style:var(100%);}
+body{background-color: rgba(228, 233, 226, 0.541);}
 .grid-dieArtikel {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -8,6 +11,8 @@ h1{text-align: center;}
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px 30px;
+    background-color:rgba(131, 161, 243, 0.705);
+    box-shadow: 5px -3px 3px 2px cadetblue;
   }
   
   .img-wrapper > img {
@@ -20,6 +25,4 @@ h1{text-align: center;}
     width: 80%;
     height: 200px;
   }
-  .summary::marker > text{
-    color: rgb(231, 13, 13)
-  }
+ 
