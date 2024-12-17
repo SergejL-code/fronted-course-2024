@@ -25,7 +25,7 @@ let res = giveFiveAfterSevenSeconds();
 console.log("печать", res);
 
 //! Обработка асинхронного действия
-
+//*promise (обещание)
 const promise = new Promise(function (resolve, reject) {
   //resolve//разрешать к then, reject//отклонять к  catch
   //Arrow function- стрелочная функция
