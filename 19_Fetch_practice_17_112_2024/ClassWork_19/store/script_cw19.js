@@ -45,7 +45,7 @@ async function fetchProducts() {
     const heading = document.createElement("h4");
     heading.textContent = product.title;
     //добавляем элементы к карточкам
-    card.append(heading);
+    // card.append(heading);
 
     //*создаем картинку
     const img = document.createElement("img");
