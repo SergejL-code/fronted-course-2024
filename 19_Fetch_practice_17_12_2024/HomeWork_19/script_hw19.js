@@ -31,9 +31,15 @@ async function frageDerArtikel() {
    wrapper.append(img);
 
    //*создаем описание товара*/
-   const desc = document.createElement('details')
-   desc.textContent = product.description
 
+   const desc = document.createElement('details')
+   desc.textContent = product.description;
+
+  //const shadowRoot = document.querySelector('element-with-shadow-root').shadowRoot;
+  // const summaryElement = shadowRoot.querySelector('summary');
+  // summaryElement.textContent = 'product.title'
+// const  op= document.createElement('summary')
+// op.textContent = product.brand;
 
    //*добавляем цену*/
     const price =document.createElement('p')
