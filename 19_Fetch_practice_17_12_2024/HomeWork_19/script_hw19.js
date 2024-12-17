@@ -31,7 +31,7 @@ async function frageDerArtikel() {
    wrapper.append(img);
 
    //*создаем описание товара*/
-   const desc = document.createElement('detail')
+   const desc = document.createElement('details')
    desc.textContent = product.description
 
 
