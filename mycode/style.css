@@ -118,3 +118,52 @@ border-radius: 15px;
     font-weight: bold;
     margin-top: 2rem;
   }
+
+
+/* Имитация вращающего облака */
+  .cloud-loader {
+    width: 80px;
+    height: 50px;
+    background: #3508d6;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotation 2s linear infinite;
+  }
+  
+  .cloud-loader::before,
+  .cloud-loader::after {
+    content: "";
+    position: absolute;
+    background: #3508d6;
+    border-radius: 50%;
+  }
+  
+  .cloud-loader::before {
+    width: 70px;
+    height: 50px;
+    top: -20px;
+    left: -25px;
+  }
+  
+  .cloud-loader::after {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+    right: -15px;
+  }
+  
+  .hidden {
+    display: none; /* Скрывает элемент */
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }

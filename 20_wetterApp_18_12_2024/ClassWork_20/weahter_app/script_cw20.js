@@ -16,20 +16,26 @@ async function getWeather() {
       // Деструктуризация данных о погоде
       const { temperature, windspeed, weathercode } = wetterData .current_weather;
       const { temperature: temperatureUnit, windspeed: windspeedUnit } =
-      wetterData .current_weather_units;
+      wetterData.current_weather_units;
   
       // Расшифровка погодного кода
       const code = interpretationCodes(weathercode);
+
   
       // Вывод данных на страницу
-      const wetterInfo = document.createElement("div");
-      wetterInfo.innerHTML = `
-        <h2>Wetter in ${city}</h2>
-        <p>Temperatur: ${temperature} ${temperatureUnit}</p>
-        <p>Windgeschwindigkeit: ${windspeed} ${windspeedUnit}</p>
-        <p>Beschreibung: ${code}</p>
-      `;
-      document.body.append(wetterInfo);
+      const stadt = document.createElement("p");
+      stadt.textContent = `Wetter in ${city}`
+
+      const temperatur = document.createElement("p");
+      temperatur.textContent =`Temperatur  ${temperature}  ${temperatureUnit}`
+
+      const geschwindigkeit = document.createElement("p")
+      geschwindigkeit.textContent =`geschwindigkeit: ${windspeed} ${windspeedUnit}`
+
+      const wetterCode = document.createElement("p")
+      wetterCode.textContent=`Beschreibung: ${code}`
+      
+      document.body.append(stadt,temperatur,geschwindigkeit,wetterCode);
    
   }
   

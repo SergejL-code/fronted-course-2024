@@ -1,0 +1,78 @@
+body {
+    background-image: url('./image/1654246834_42-celes-club-p-krasivie-odnotonnie-oboi-krasivie-42.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Roboto', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-shadow: 6px 0px 4px rgba(0, 0, 0, 0.7);
+}
+p{font-size: 30px;
+color: rgb(14, 13, 13);
+text-shadow: 6px 0px 15px ;} 
+
+
+#weather-container {
+    
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 10px -3px 13px  rgba(0, 0, 0, 0.5);
+} 
+
+ #weather-container p {
+    
+    margin: 10px 0;
+    font-size: 1.2rem; 
+}
+
+.loader {
+    width: 45px;
+    height: 45px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: rotation 0.8s linear infinite;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+ #weather-container{
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} 
