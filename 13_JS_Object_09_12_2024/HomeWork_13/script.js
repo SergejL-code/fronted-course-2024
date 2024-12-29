@@ -20,7 +20,7 @@ function deposit(bankAccount, sum) {
 
 //удаляем сумму со счёта
 function withdraw(bankAccount, sum) {
-  if (bankAccount.balance >= sum) {
+  if (bankAccount.balance >= sum && sum > 0) {
     bankAccount.balance -= sum;
   } else {
     console.log("Wrong");

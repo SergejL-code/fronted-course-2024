@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/14_Interface_10_12_2024/HomeWork_14/style_hw14.css" />
+    <script src="/14_Interface_10_12_2024/HomeWork_14/script_hm14.js" defer></script>
+    <title>Class Work 14</title>
+  </head>
+  <body>
+    <h1>Class Work 14 : Interface</h1>
+    <section id="create">
+      <label for="name">Name:</label>
+      <input type="text" id="name"  />
+      <button onclick="createAccount()">Create new account</button>
+      <button onclick="showAccounts()">Show all account</button>
+    </section>
+
+    <section id = "show">
+      <!-- ul -unordered list- ненумерованный список(маркированный),точки
+  ol - ordered list - нумерованный список, цифры
+  li -list item -элемент списка
+    -->
+
+      <ol id="accountList"></ol>
+    </section>
+
+    <section id = "change">
+      <label for = "accountId">Account ID:</label
+      ><input type = "text" id ="accountId" /> <label for="amount">Amount:</label
+      ><input type = "number" id = "amount" /><!-- value -string! -->
+
+      <!-- Обработчик событий Event Listener -->
+      <button id = "deposit">Deposit</button>
+      <button id = "withdraw">Withdraw</button>
+    </section>
+  </body>
+</html>
